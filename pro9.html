@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <h1>Program 9</h1><br>
+        <h3>Write a program to print the following pattern (hint: use nested loop).
+        </h3><br>
+
+        <button type="submit" onclick="myfunction()">Submit</button><br><br>
+        <div id="result"></div>
+        <h2>Check console to see result</h2>
+    </div>
+    <script>
+        function myfunction()
+        {
+            var f=" ";
+            for(var i=1;i<=5;i++)
+            {
+                for(var j=1;j<=i;j++)
+                {        
+                    let s = j.toString(8);
+                    f=f+' '+s;                    
+                }
+                console.log(f);
+                document.write(f+"<br>");
+                f=" ";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <h1>Program 6</h1>
+        <h3>Using the ‘switch case’ write a program to accept an input number from the user and output the day as follows.</h3>
+        <input type="text" id="text" placeholder="Input day (1 or 2 ...)"><br>
+        <button type="submit" onclick="myfunction()">Sumbit</button><br><br>
+        <h2 id="result"></h2>
+    </div>
+    <script>
+        function myfunction()
+        {
+            var n=document.getElementById("text").value;
+            var i=parseFloat(n);
+            switch(i)
+            {
+                case 1: console.log("Monday");
+                        document.getElementById("result").innerHTML="Monday";
+                        break;
+                case 2:
+                        console.log("Tuesday");
+                        document.getElementById("result").innerHTML="Tuesday";
+                        break;
+                case 3:
+                        console.log("Wednesday");
+                        document.getElementById("result").innerHTML="Wednesday";
+                        break;
+                case 4:
+                        console.log("Thursday");
+                        document.getElementById("result").innerHTML="Thursday";
+                        break;
+                case 5:
+                        console.log("Friday");
+                        document.getElementById("result").innerHTML="Friday";
+                        break;
+                case 6:
+                        console.log("FSaturday");
+                        document.getElementById("result").innerHTML="Saturday";
+                        break;
+                case 7:
+                        console.log("Sunday");
+                        document.getElementById("result").innerHTML="Sunday";
+                        break;
+                default:
+                        console.log("Invalied Entry");
+                        document.getElementById("result").innerHTML="Invalied Entry";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>

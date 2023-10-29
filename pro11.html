@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <h1>Program 11</h1><br>
+        <h3>Write a program to find the number of even numbers in an array.</h3><br>
+        <input type="text" id="t1" placeholder="Size of on Array"><br>
+        <input type="text" id="a1" placeholder="Enter Value of an Array :"><br>
+        <button type="submit" onclick="myfunction()">Submit</button><br><br>
+        <h2 id="swap1"></h2>
+        <h2 id="swap2"></h2>
+    </div>
+    <script>
+        function myfunction()
+        {
+            var ar1 = [];
+            var count=0;
+            var n= parseInt(document.getElementById("t1").value);
+            var a=document.getElementById("a1").value;
+            ar1= a.split(",");
+            console.log(ar1);
+            for(var i=0;i<n;i++)
+            {
+                if(ar1[i]%2==0)
+                {
+                    count++;
+                }
+            }
+            console.log(count);
+            document.getElementById("swap1").innerHTML="Number of even numbers in the given array is: "+count;
+            
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+</html>
